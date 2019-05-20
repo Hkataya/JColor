@@ -1,0 +1,116 @@
+<html>
+    <head>
+        
+        <title> JColor | Free JavaScript Color Picker </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type='text/css' href="style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    </head>
+  
+<body>
+
+    <div class="header">
+    
+        <h1> Jcolor | Free Vanilla Javascript Color Picker </h1>  
+    
+        <button  >
+            <a class="innerbtn" href="" > 
+        view on github
+            </a>
+        </button>
+        
+        <nav>
+            <a href="#overview" > Overview</a>
+            <a href="#examples" > Examples</a>
+            <a href="#download" > Download</a>
+            
+            
+        </nav>
+    </div>
+   
+    <div class="wrapper">
+        <div class="overview" id="overview" >
+  
+        <h1> Overview </h1>
+        <p> Jcolor is a simple vanilla JavaScript color plugin with no dependencies. Simply download the jcolor.js file, include the script in your project, and you're good to go! </p>
+            
+        
+        </div>
+        
+        <div class="syntax">
+        <h1>Syntax</h1>
+            <h2>color(arg1, arg2, arg3);</h2>
+            <ul>
+                <li> arg1: html element to trigger color picker and to color by default </li>
+                <li> (optional) arg2: html element to color </li>
+                <li> (optional) arg3: array of custom colors to be used( hex values) </li>
+                
+                
+            </ul>
+            
+        
+        </div>
+  
+        <div class="examples" id="examples">
+        
+            <h1>Basic Usage</h1>
+            <div class="example">
+            
+                
+                <button  onclick="color(this)"  > Click Me </button>
+                <div class="script">
+                <script src="https://gist.github.com/Hkataya/5fc1cd9c2d353e37d59ae1566c4cfba6.js"></script> 
+                </div>
+               
+                
+            </div>
+            
+            <h1> Picking Color for a specific element </h1>
+        
+            <div class="example">
+            
+                
+                <div id="division"> this is a simple div tag </div>
+                <button  onclick="color(this, document.getElementById('division'))"  > Click Me </button>
+                <div class="script"><script src="https://gist.github.com/Hkataya/7b7282e0dcde8d5ff65661ceae8f85ca.js"></script> </div>
+                
+                
+            </div>
+
+            <h1> Add your own set of colors </h1>
+             <div class="example">
+            
+                
+                <button  onclick="color(this,this, ['808000', 'FFFF00', '800000', 'FF0000'])"  > Click Me </button>
+                     <div class="script"> <script src="https://gist.github.com/Hkataya/9e0a8553be870036537d996be3e41e57.js"></script></div>
+                 
+              
+            </div>
+            
+            
+            
+            
+        
+        </div>
+        
+        <div class="download" id="download" >
+            
+            <button class="btn"><a href="jcolor.js" download> <i class="fa fa-download"></i>Download </a></button>
+            
+        </div>
+        
+    </div>
+    
+    <div class="footer">
+        
+        <h1> Jcolor@2019 </h1>
+        
+    </div>
+    
+    
+
+    <script src="jcolor.js"> </script>
+    </body>
+</html>
