@@ -4,11 +4,12 @@ Jcolor is a simple vanilla JavaScript color plugin with no dependencies. Simply 
 
 ## Syntax
 
-color(arg1, arg2, arg3);
+color(arg1, arg2, arg3, arg4);
 
 * arg1: html element to trigger color picker and to color by default
 * (optional) arg2: html element to color
 * (optional) arg3: array of custom colors to be used( hex values)
+* (optional) arg4: callback function to retrieve the color code
 
 ## Demo
 
@@ -29,6 +30,16 @@ Picking Color for a specific element
 <script src="jcolor.js"> </script>
 <div id="division"> this is a simple div tag </div>
 <button  onclick="color(this, document.getElementById('division'))"  > Click Me </button>
+```
+
+Picking Color for a specific element
+
+```
+<script src="jcolor.js"> </script>
+<h4 > Color Code: </h4>
+<h3 id="colorCode">  </h3>
+<button  onclick="color(this,this, undefined , function(code){document.getElementById('colorCode').innerHTML=code} )"  > Click Me </button>
+
 ```
 
 
