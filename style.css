@@ -10,6 +10,7 @@ body{
 .header{
 
     text-align: center;
+    background-image: -webkit-gradient(linear, left top, right top, from(#134E5E), to(#71B280));
     background-image: linear-gradient(to right, #134E5E, #71B280);
       color:white;
     border-style:groove;
@@ -99,9 +100,19 @@ button{
 
 .wrapper{
     
+    display:-webkit-box;
+    
+    display:-ms-flexbox;
+    
     display:flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+     -ms-flex-wrap: wrap;
      flex-wrap: wrap;
     
     
@@ -166,6 +177,9 @@ button{
 
 }
 
+
+
+
 .btn {
   background-color: #71B280;
   border: none;
@@ -188,6 +202,7 @@ button{
     text-align: center;
     color: white;
     height: 80px;
+    background-image: -webkit-gradient(linear, right top, left top, from(#134E5E), to(#71B280));
     background-image: linear-gradient(to left, #134E5E, #71B280);  
     width:100%;
     
