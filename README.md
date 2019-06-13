@@ -4,7 +4,7 @@ Jcolor is a simple vanilla JavaScript color plugin with no dependencies. Simply 
 
 ## Syntax
 
-color(arg1, arg2, arg3);
+color(arg1, arg2, arg3, arg4);
 
 * arg1: html element to trigger color picker and to color by default
 * (optional) arg2: html element to color
