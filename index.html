@@ -42,11 +42,12 @@
         
         <div class="syntax">
         <h1>Syntax</h1>
-            <h2>color(arg1, arg2, arg3);</h2>
+            <h2>color(arg1, arg2, arg3, arg4);</h2>
             <ul>
                 <li> arg1: html element to trigger color picker and to color by default </li>
                 <li> (optional) arg2: html element to color </li>
-                <li> (optional) arg3: array of custom colors to be used( hex values) </li>
+                <li> (optional) arg3: array of custom colors to be used (hex values) </li>
+                <li> (optional) arg4: callback function to retrieve the color code </li>
                 
                 
             </ul>
@@ -84,12 +85,23 @@
              <div class="example">
             
                 
-                <button  onclick="color(this,this, ['808000', 'FFFF00', '800000', 'FF0000'])"  > Click Me </button>
+                <button  onclick="color(this,this, ['0496FF', 'FFBC42', 'D81159', '8F2D56', '006BA6', '04E762'])"  > Click Me </button>
                      <div class="script"> <script src="https://gist.github.com/Hkataya/9e0a8553be870036537d996be3e41e57.js"></script></div>
                  
               
             </div>
             
+                 <h1> Retrive the value of the Color selected </h1>
+             <div class="example">
+            
+                
+                <h4 > Color Code: </h4>
+                 <h3 id="colorCode">  </h3>
+                <button  onclick="color(this,this, undefined , function(code){document.getElementById('colorCode').innerHTML=code} )"  > Click Me </button>
+                     <div class="script"><script src="https://gist.github.com/Hkataya/7fc13cc58fb9662ee7cad3f6b339cb1a.js"></script></div>
+                 
+              
+            </div>
             
             
             
